@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e0f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #006064;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.package {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.package:hover {
+    transform: scale(1.05);
+}
+
+.package h2 {
+    color: #00796b;
+}
+
+.price {
+    font-size: 20px;
+    color: #004d40;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #00796b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #004d40;
+}
+.notifications-container {
+  max-width: 1100px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-left h2 {
+  background: #008cdd;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  margin: 0;
+}
+
+.header-left select {
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.filters {
+  margin: 15px 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filters input[type="text"] {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filters button {
+  padding: 8px 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.notification-list .notification {
+  background: #eaf4ff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  /* Giữ khoảng cách giữa các cột cụ thể */
+  gap: 20px;
+}
+
+.notification.read {
+  background-color: #d6f5d6;
+}
+
+/* Căn chỉnh layout thông minh theo chiều ngang */
+.notification .text {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.notification .date {
+  width: 150px;
+  color: gray;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.notification .actions {
+  width: 80px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.notification .actions img {
+  width: 20px;
+  height: 20px;
+ 
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pagination a {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+  transition: all 0.2s ease;
+}
+
+.pagination a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.pagination a.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+  font-weight: bold;
+}
+.event-button {
+    padding: 8px 12px; /* Cùng padding với .filters button */
+/*    background: #008cdd;  Hoặc một màu phù hợp với thiết kế của bạn, có thể tương tự nền H2 "Packages" */
+/*    color: white;*/
+ border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    /* Thêm bất kỳ kiểu nào khác để nhất quán với phần header-left của bạn */
+}
+
+.event-button:hover {
+/*    background: #007bff;  Màu đậm hơn khi di chuột qua */
+}

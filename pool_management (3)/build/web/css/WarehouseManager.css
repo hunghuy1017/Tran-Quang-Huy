@@ -1,0 +1,253 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb;
+    margin: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.top-bar select,
+.top-bar input,
+.top-bar button {
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+select.view-stock {
+    background-color: #e0f2fe;
+    border: 1px solid #38bdf8;
+    color: #0369a1;
+}
+
+select.view-history {
+    background-color: #e0f2fe;
+    border: 1px solid #38bdf8;
+    color: #0369a1;
+}
+
+.btn-green {
+    background-color: #10b92c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.search-group, .view-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.search-group {
+    flex: 2;
+}
+
+.view-group {
+    justify-content: center;
+    flex: 1;
+}
+
+.action-group {
+    flex: 1;
+    text-align: right;
+}
+
+button.search-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button.search-btn a{
+   text-decoration: none;
+   color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+th, td a{
+    text-decoration: none;
+}
+
+th {
+    background-color: #f3f4f6;
+    font-weight: 600;
+}
+
+.status-green {
+    color: #10b92c;
+    font-weight: bold;
+}
+
+.status-red {
+    color: #ef4444;
+    font-weight: bold;
+}
+
+.icon-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover; /* giúp ảnh không bị méo nếu không đúng tỉ lệ */
+    border-radius: 8px; /* bo góc nhẹ để nhìn đẹp hơn */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* bóng nhẹ để ảnh nổi bật */
+}
+
+.actions span {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination {
+    text-align: right;
+    margin-top: 15px;
+}
+
+.pagination a{
+    text-decoration: none;
+}
+
+.pagination button {
+    border: 1px solid #ddd;
+    background-color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.statistical {
+    margin-top: 30px;
+    background-color: #f3f4f6;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 15px;
+}
+
+.statistical p {
+    margin: 6px 0;
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    th, td {
+        font-size: 13px;
+    }
+
+    .view-group {
+        justify-content: flex-start;
+    }
+
+    .action-group {
+        text-align: left;
+    }
+}
+
+.confirm-popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.confirm-box {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  animation: fadeInScale 0.3s ease;
+}
+
+.confirm-box p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.confirm-box .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.confirm-box .buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#confirm-yes {
+  background-color: #dc3545;
+  color: white;
+}
+
+#confirm-no {
+  background-color: #ccc;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

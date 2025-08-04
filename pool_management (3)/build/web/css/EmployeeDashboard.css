@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+}
+
+h2 {
+    color: #2e7d32; /* Giữ màu xanh lá cho tiêu đề chính */
+    margin-top: 20px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.pool-name {
+    color: #2196F3; /* Màu xanh dương cho tên hồ bơi */
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 30px;
+    max-width: 900px;
+    margin-top: 20px;
+    flex-grow: 1;
+}
+
+.card {
+    border: 2px solid #81c784;
+    width: 220px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    background-color: #e8f5e9;
+    transform: translateY(-5px);
+    border-color: #4caf50;
+}
+
+a {
+    text-decoration: none;
+    color: #1b5e20; /* Giữ màu xanh lá cho liên kết trong dashboard */
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #388e3c;
+}
+
+footer {
+    width: 100%;
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}

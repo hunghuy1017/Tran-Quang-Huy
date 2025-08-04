@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.container {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.left img {
+    width: 400px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.right p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+.section {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+h2, h3 {
+    color: #007BFF;
+}
+h3 {
+    margin-top: 40px;
+}
+ul {
+    padding-left: 20px;
+    list-style-type: none;
+}
+ul li {
+    margin-bottom: 10px;
+}
+.other-pools-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.other-pool-card {
+    width: 200px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.other-pool-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.other-pool-card a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+.other-pool-card a:hover {
+    text-decoration: underline;
+}
+.status-active {
+    color: green;
+    font-weight: bold;
+}
+.status-inactive {
+    color: red;
+    font-weight: bold;
+}
+.rating {
+    display: inline-block;
+    font-size: 18px;
+}
+.star {
+    color: #ccc; /* Màu xám cho ngôi sao không được chọn */
+}
+.star.filled {
+    color: #f8c307; /* Màu vàng cho ngôi sao được chọn */
+}

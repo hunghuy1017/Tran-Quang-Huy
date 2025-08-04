@@ -1,0 +1,145 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .back-button {
+      display: inline-block;
+      background: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .meta-info {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    .meta-info span {
+      display: block;
+      margin-top: 5px;
+    }
+
+    .content-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .content-box {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: #fafafa;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+    }
+
+    .icon {
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .icon:hover {
+      filter: brightness(0.8);
+    }
+
+    .icon.delete:hover {
+      filter: brightness(0.8) sepia(1) hue-rotate(-50deg) saturate(5);
+    }
+    
+    .confirm-popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.confirm-box {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  animation: fadeInScale 0.3s ease;
+}
+
+.confirm-box p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.confirm-box .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.confirm-box .buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#confirm-yes {
+  background-color: #dc3545;
+  color: white;
+}
+
+#confirm-no {
+  background-color: #ccc;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

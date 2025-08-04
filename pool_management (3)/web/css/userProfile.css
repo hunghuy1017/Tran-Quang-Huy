@@ -1,0 +1,144 @@
+body {
+     background-color: #b3ccf9;
+  font-family: Arial, sans-serif;
+  background-image: url('../image/water.jpg'); /* Đường dẫn đến ảnh */
+  background-size: cover; /* Đảm bảo ảnh bao phủ toàn bộ nền */
+  background-position: center; /* Căn giữa ảnh */
+  background-repeat: no-repeat; /* Ngăn ảnh lặp lại */
+/*  padding: 30px;*/
+}
+
+.card-info {
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.avatar {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.avatar label {
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 14px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.avatar label:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  width: 130px;
+  font-weight: bold;
+}
+
+.form-group input {
+  flex: 1;
+  padding: 6px 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+  
+}
+
+.input-group {
+  position: relative;
+  flex: 1;
+}
+
+/*.input-group input {
+    text-align: center;
+  width: 89%;
+  padding-right: 30px;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}*/
+
+.input-group input {
+  text-align: center;
+  width: 100%;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.action {
+  width: 100px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.action a {
+  font-size: 12px;
+  color: blue;
+  text-decoration: none;
+}
+
+.action a:hover,
+.eye-icon:hover {
+  text-decoration: underline;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px; /* Thêm khoảng cách phía trên nếu cần */
+  margin-bottom: 40px
+}
+
+.button input {
+  width: 150px; /* Đặt chiều rộng cố định để nút ngắn lại */
+  padding: 8px 16px; /* Điều chỉnh padding để nút trông gọn hơn */
+  border-radius: 5px; /* Giữ bo góc */
+  border: 1px solid #ccc; /* Viền nút */
+  background-color: #007bff; /* Màu nền nút */
+  color: white; /* Màu chữ */
+  cursor: pointer; /* Con trỏ chuột khi hover */
+}
+
+.button input:hover {
+  background-color: #0056b3; /* Màu nền khi hover */
+}

@@ -1,0 +1,176 @@
+/* styles.css */
+
+/* CSS cho aside */
+.left-panel {
+    width: 250px;
+    height: 100vh;
+    background-color: #2c2e3e;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    transition: all 0.3s;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.left-panel .navbar-brand {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2c2e3e;
+}
+
+.left-panel .navbar-brand .brand-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.left-panel .navbar-brand .brand-circle {
+    width: 20px;
+    height: 20px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.left-panel .navbar-toggler {
+    color: #ffffff;
+    border: none;
+    background: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.left-panel .main-menu {
+    padding: 0;
+}
+
+.left-panel .nav.navbar-nav {
+    flex-direction: column !important; /* Đảm bảo xếp dọc */
+    padding-top: 20px;
+}
+
+.left-panel .nav-item {
+    width: 100%;
+}
+
+.left-panel .nav-link {
+    color: #a9b7d0 !important;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    text-decoration: none;
+}
+
+.left-panel .nav-link:hover,
+.left-panel .nav-link.active {
+    color: #ffffff !important;
+    background-color: #2a2c3a;
+    border-left: 4px solid #e74c3c;
+}
+
+.left-panel .menu-title {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+.left-panel .dropdown-menu {
+    background-color: #2c2e3e;
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    position: static;
+    float: none;
+    width: 100%;
+    border-radius: 0;
+}
+
+.left-panel .dropdown-item {
+    color: #a9b7d0 !important;
+    padding: 8px 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+.left-panel .dropdown-item:hover {
+    color: #ffffff !important;
+    background-color: #2a2c3a;
+}
+
+/* CSS cho body và container */
+body {
+    margin-left: 250px;
+    background-color: #f4f6f9;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    margin-top: 20px;
+    padding: 20px;
+}
+/* Custom styles for BluePool Dashboard and Calendar */
+.calendar-day {
+    width: 14.28%;
+    height: 120px;
+}
+
+.event {
+    font-size: 0.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Modal styles */
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    max-width: 32rem;
+    width: 100%;
+}
+.day-of-week {
+        width: 14.26%; /* 100% / 7 ngày */
+        text-align: center;
+    }
+    .calendar-day {
+        width: 14.26%; /* Đảm bảo mỗi ô chiếm 1/7 chiều rộng */
+        min-height: 120px; /* Chiều cao tối thiểu cố định */
+        max-height: 120px; /* Chiều cao tối đa cố định */
+        overflow-y: auto; /* Thêm cuộn dọc nếu nội dung vượt quá */
+        box-sizing: border-box; /* Đảm bảo padding không làm giãn ô */
+    }
+    .event {
+        max-width: 100%; /* Đảm bảo sự kiện không vượt quá ô */
+        word-wrap: break-word; /* Ngắt từ nếu quá dài */
+    }

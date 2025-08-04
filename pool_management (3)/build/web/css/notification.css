@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f1f2f6;
+}
+
+.notifications-container {
+  max-width: 1100px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-left h2 {
+  background: #008cdd;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  margin: 0;
+}
+
+.header-left select {
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.filters {
+  margin: 15px 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filters input[type="text"] {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filters button {
+  padding: 8px 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.success-message {
+  background-color: #e6f9ed;
+  border: 1px solid #00cc33;
+  color: #006622;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin: 10px 0 20px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: fadeIn 0.4s ease-in;
+}
+
+.success-message i {
+  color: #00cc33;
+  font-size: 18px;
+}
+
+/* Optional: Fade-in effect */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.notification-list .notification {
+  background: #eaf4ff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  /* Giữ khoảng cách giữa các cột cụ thể */
+  gap: 20px;
+}
+
+.notification.read {
+  background-color: #d6f5d6;
+}
+
+/* Căn chỉnh layout thông minh theo chiều ngang */
+.notification .text {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.notification .date {
+  width: 150px;
+  color: gray;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.notification .actions {
+  width: 80px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.notification .actions img {
+  width: 20px;
+  height: 20px;
+ 
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pagination a {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+  transition: all 0.2s ease;
+}
+
+.pagination a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.pagination a.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+  font-weight: bold;
+}
+
+.confirm-popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.confirm-box {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  animation: fadeInScale 0.3s ease;
+}
+
+.confirm-box p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.confirm-box .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.confirm-box .buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#confirm-yes {
+  background-color: #dc3545;
+  color: white;
+}
+
+#confirm-no {
+  background-color: #ccc;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
